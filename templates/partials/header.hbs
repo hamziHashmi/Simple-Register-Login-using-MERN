@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Bootstrap Js and Jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,200;0,8..30,300;0,8..30,400;1,8..30,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Piazzolla', serif;
+}
+:root{
+  --main-bg:#1e272e;
+  --main-color: #2297e6;
+}
+html{
+  font-size: 62.5%;
+}
+.root{
+  margin: 0;
+}
+body{
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.main_menu{
+  background-color: var(--main-bg);
+}
+.navbar{
+  margin: 2rem 0;
+}
+.navbar li{
+  margin-left: 2rem;
+}
+.navbar a{
+  color: #fff;
+}
+.navbar a:hover{
+  color: var(--main-color)
+}
+button.navbar-toggler {
+  background-color: white;
+}
+.fa-snowflake{
+  transition: all linear;
+  animation: rotate 1s infinite linear;
+  color: var(--main-color);
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(100deg);
+  }
+}
+
+
+
+/** banner_main **/
+
+.banner_main {
+     background: url(../images/banner1.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 1034px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.carousel-indicators li {
+     width: 20px;
+     height: 20px;
+     border-radius: 11px;
+     background-color: #fe9a0c;
+     margin: 0px 4px;
+     cursor: pointer;
+}
+
+.carousel-indicators li.active {
+     background-color: #fff;
+}
+
+.carousel-indicators {
+     top: 122%;
+     margin-left: 5%;
+     right: inherit;
+}
+
+.banner_main {
+     position: relative;
+}
+
+.relative {
+     position: inherit;
+     bottom: 0;
+     padding: 0;
+}
+
+.bg_white {
+     background: #fffffff0;
+     padding: 45px 20px 50px 20px;
+}
+
+.banner_main .bg_white h1 {
+     color: #141111;
+     font-size: 70px;
+     line-height: 84px;
+     font-weight: 700;
+     padding-bottom: 22px;
+}
+
+.banner_main .bg_white p {
+     color: #2d2d2d;
+     line-height: 30px;
+     font-weight: 500;
+     padding-bottom: 0px;
+}
+
+.banner_main .ban_btn {
+     display: block;
+     background: #fff;
+     color: #000;
+     font-size: 17px;
+     font-weight: 500;
+     margin: 0 auto;
+     margin-top: 55px;
+} 
+
+.ban_btn .carousel-control-next-icon,
+.carousel-control-prev-icon {
+     display: none;
+}
+
+{{!-- About Section  --}}
+
+.top_layer {
+     position: relative;
+}
+
+
+/* .top_layer::before {
+     position: absolute;
+     width: 100%;
+     height: 260px;
+     content: "";
+     background: url(../images/croos.png);
+     background-size: 100% 100%;
+     background-position: center center;
+     background-repeat: no-repeat;
+     top: -257px;
+}*/
+
+.about {
+     padding-top: 10px;
+}
+
+.about .titlepage p {
+     line-height: 24px;
+     padding-top: 19px;
+     color: #000;
+     font-weight: 400;
+}
+
+.about_box {
+     padding: 20px 0;
+     box-shadow: 4px 0 27px rgba(02, 3, 8, 0.20);
+}
+
+.about_box_text {
+     padding-left: 50px;
+}
+
+.about_box_text h3 {
+     font-size: 27px;
+     text-transform: uppercase;
+     font-weight: 700;
+     color: #0b0d0a;
+     line-height: 30px;
+     padding-bottom: 20px;
+}
+
+.about_box_text p {
+     font-size: 20px;
+     line-height: 32px;
+     color: #0b0d0a;
+     font-weight: 400;
+     padding-bottom: 35px;
+}
+
+.about_box_img {
+     padding: 35px 0;
+     margin-right: -60px;
+}
+
+.about_box_img figure {
+     margin: 0;
+}
+
+.about_box_img figure img {
+     width: 100%;
+}
+
+
+{{!-- Registration Form CSS --}}
+
+gradient-custom {
+/* fallback for old browsers */
+background: #f093fb;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+
+{{!-- Login Form CSS --}}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+    </style>
